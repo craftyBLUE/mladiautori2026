@@ -1,0 +1,29 @@
+sfml tutorial:
+=== COMPILE ===
+`git clone https://github.com/SFML/cmake-sfml-project`
+`cd cmake-sfml-project`
+`cmake -B build`
+`cd build`
+`cmake --build .`
+
+linux/mac:
+`./bin/main`
+
+windows:
+`bin\main.exe`
+
+=== KOD ===
+u "src" folderu
+
+=== VISUAL STUDIO CODE ===
+otvoriti folder u vscode-u
+instalirati "CMake Tools" extension
+desni klik na CMakeLists.txt
+"Build all projects"
+odabrati kompiler
+za pokretanje kliknuti start trokutić u donjem lijevom kutu
+
+=== TUTORIAL ===
+https://www.sfml-dev.org/tutorials/3.0/
+
+
