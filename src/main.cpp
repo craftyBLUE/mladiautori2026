@@ -2,7 +2,7 @@
 
 int main()
 {
-	sf::RenderWindow window( sf::VideoMode( { 200, 200 } ), "SFML works!" );
+	sf::RenderWindow window( sf::VideoMode( { 800, 800 } ), "SFML works!" );
 	sf::CircleShape krug( 100.f );
 	krug.setFillColor(sf::Color::Green);
 
@@ -10,6 +10,11 @@ int main()
 	pravokutnik.setFillColor(sf::Color::Red);
 	pravokutnik.setPosition({20.0f, 40.0f});
 
+	sf::Texture tekstura("assets/zaruljko.png");
+  sf::Sprite sprajt(tekstura);
+  sprajt.setPosition({40.0f, 80.0f});
+	sprajt.setScale({0.5f, 0.5f});
+	
 	sf::Clock frameClock;
 
 	while ( window.isOpen() )
@@ -27,6 +32,7 @@ int main()
 		window.clear();
 		window.draw(krug);
 		window.draw(pravokutnik);
+		window.draw(sprajt);
 		window.display();
 	}
 }
